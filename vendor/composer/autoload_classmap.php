@@ -26,6 +26,7 @@ return array(
     'App\\Http\\Controllers\\Authenticated\\BulletinBoard\\PostsController' => $baseDir . '/app/Http/Controllers/Authenticated/BulletinBoard/PostsController.php',
     'App\\Http\\Controllers\\Authenticated\\Calendar\\Admin\\CalendarsController' => $baseDir . '/app/Http/Controllers/Authenticated/Calendar/Admin/CalendarsController.php',
     'App\\Http\\Controllers\\Authenticated\\Calendar\\General\\CalendarController' => $baseDir . '/app/Http/Controllers/Authenticated/Calendar/General/CalendarController.php',
+    'App\\Http\\Controllers\\Authenticated\\Shifts\\ShiftsController' => $baseDir . '/app/Http/Controllers/Authenticated/Shifts/ShiftsController.php',
     'App\\Http\\Controllers\\Authenticated\\Top\\TopsController' => $baseDir . '/app/Http/Controllers/Authenticated/Top/TopsController.php',
     'App\\Http\\Controllers\\Authenticated\\Users\\UsersController' => $baseDir . '/app/Http/Controllers/Authenticated/Users/UsersController.php',
     'App\\Http\\Controllers\\Controller' => $baseDir . '/app/Http/Controllers/Controller.php',

@@ -5,12 +5,11 @@ namespace App\Http\Controllers\Authenticated\Users;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-use Gate;
-use App\Models\Users\User;
-use App\Models\Users\Subjects;
-use App\Searchs\DisplayUsers;
-use App\Searchs\SearchResultFactories;
-
+use Gate;//権限を定義・チェックするためのもの
+use App\Models\Users\User;//ユーザーのモデル
+use App\Models\Users\Subjects;//科目のモデル
+use App\Searchs\DisplayUsers;//ユーザー検索のモデル
+use App\Searchs\SearchResultFactories;//検索結果のモデル
 class UsersController extends Controller
 {
 
