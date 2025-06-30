@@ -494,6 +494,7 @@ class ComposerStaticInitc71bbe4db8ba969d1d5107da2abb17a2
         'App\\Http\\Controllers\\Authenticated\\BulletinBoard\\PostsController' => __DIR__ . '/../..' . '/app/Http/Controllers/Authenticated/BulletinBoard/PostsController.php',
         'App\\Http\\Controllers\\Authenticated\\Calendar\\Admin\\CalendarsController' => __DIR__ . '/../..' . '/app/Http/Controllers/Authenticated/Calendar/Admin/CalendarsController.php',
         'App\\Http\\Controllers\\Authenticated\\Calendar\\General\\CalendarController' => __DIR__ . '/../..' . '/app/Http/Controllers/Authenticated/Calendar/General/CalendarController.php',
+        'App\\Http\\Controllers\\Authenticated\\Shifts\\ShiftsController' => __DIR__ . '/../..' . '/app/Http/Controllers/Authenticated/Shifts/ShiftsController.php',
         'App\\Http\\Controllers\\Authenticated\\Top\\TopsController' => __DIR__ . '/../..' . '/app/Http/Controllers/Authenticated/Top/TopsController.php',
         'App\\Http\\Controllers\\Authenticated\\Users\\UsersController' => __DIR__ . '/../..' . '/app/Http/Controllers/Authenticated/Users/UsersController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
