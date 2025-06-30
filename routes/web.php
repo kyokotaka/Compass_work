@@ -65,6 +65,7 @@ Route::group(['middleware' => 'auth'], function(){
         Route::namespace('Shifts')->group(function(){
             Route::get('show/schedule',[ShiftsController::class,'scheduleShow'])->name('schedule.show');
             Route::get('input/schedule', [ShiftsController::class, 'shiftInput'])->name('schedule.input');
+            Route::post('import/csv', [ShiftsController::class, 'importCSV'])->name('schedule.import');
         });
     });
 });

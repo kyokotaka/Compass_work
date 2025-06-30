@@ -473,6 +473,16 @@ class ComposerStaticInitc71bbe4db8ba969d1d5107da2abb17a2
         ),
     );
 
+    public static $prefixesPsr0 = array (
+        'G' => 
+        array (
+            'Goodby\\CSV' => 
+            array (
+                0 => __DIR__ . '/..' . '/goodby/csv/src',
+            ),
+        ),
+    );
+
     public static $classMap = array (
         'App\\Calendars\\Admin\\CalendarSettingView' => __DIR__ . '/../..' . '/app/Calendars/Admin/CalendarSettingView.php',
         'App\\Calendars\\Admin\\CalendarView' => __DIR__ . '/../..' . '/app/Calendars/Admin/CalendarView.php',
@@ -514,6 +524,7 @@ class ComposerStaticInitc71bbe4db8ba969d1d5107da2abb17a2
         'App\\Models\\Posts\\Like' => __DIR__ . '/../..' . '/app/Models/Posts/Like.php',
         'App\\Models\\Posts\\Post' => __DIR__ . '/../..' . '/app/Models/Posts/Post.php',
         'App\\Models\\Posts\\PostComment' => __DIR__ . '/../..' . '/app/Models/Posts/PostComment.php',
+        'App\\Models\\Shifts\\Shift' => __DIR__ . '/../..' . '/app/Models/Shifts/Shift.php',
         'App\\Models\\Users\\Subjects' => __DIR__ . '/../..' . '/app/Models/Users/Subjects.php',
         'App\\Models\\Users\\User' => __DIR__ . '/../..' . '/app/Models/Users/User.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
@@ -1362,6 +1373,43 @@ class ComposerStaticInitc71bbe4db8ba969d1d5107da2abb17a2
         'Faker\\ValidGenerator' => __DIR__ . '/..' . '/fakerphp/faker/src/Faker/ValidGenerator.php',
         'Fruitcake\\Cors\\CorsService' => __DIR__ . '/..' . '/fruitcake/php-cors/src/CorsService.php',
         'Fruitcake\\Cors\\Exceptions\\InvalidOptionException' => __DIR__ . '/..' . '/fruitcake/php-cors/src/Exceptions/InvalidOptionException.php',
+        'Goodby\\CSV\\Export\\Protocol\\Exception\\IOException' => __DIR__ . '/..' . '/goodby/csv/src/Goodby/CSV/Export/Protocol/Exception/IOException.php',
+        'Goodby\\CSV\\Export\\Protocol\\ExporterInterface' => __DIR__ . '/..' . '/goodby/csv/src/Goodby/CSV/Export/Protocol/ExporterInterface.php',
+        'Goodby\\CSV\\Export\\Standard\\Collection\\CallbackCollection' => __DIR__ . '/..' . '/goodby/csv/src/Goodby/CSV/Export/Standard/Collection/CallbackCollection.php',
+        'Goodby\\CSV\\Export\\Standard\\Collection\\PdoCollection' => __DIR__ . '/..' . '/goodby/csv/src/Goodby/CSV/Export/Standard/Collection/PdoCollection.php',
+        'Goodby\\CSV\\Export\\Standard\\CsvFileObject' => __DIR__ . '/..' . '/goodby/csv/src/Goodby/CSV/Export/Standard/CsvFileObject.php',
+        'Goodby\\CSV\\Export\\Standard\\Exception\\StrictViolationException' => __DIR__ . '/..' . '/goodby/csv/src/Goodby/CSV/Export/Standard/Exception/StrictViolationException.php',
+        'Goodby\\CSV\\Export\\Standard\\Exporter' => __DIR__ . '/..' . '/goodby/csv/src/Goodby/CSV/Export/Standard/Exporter.php',
+        'Goodby\\CSV\\Export\\Standard\\ExporterConfig' => __DIR__ . '/..' . '/goodby/csv/src/Goodby/CSV/Export/Standard/ExporterConfig.php',
+        'Goodby\\CSV\\Export\\Tests\\Protocol\\ExporterInterfaceTest' => __DIR__ . '/..' . '/goodby/csv/src/Goodby/CSV/Export/Tests/Protocol/ExporterInterfaceTest.php',
+        'Goodby\\CSV\\Export\\Tests\\Standard\\Join\\Collection\\PdoCollectionTest' => __DIR__ . '/..' . '/goodby/csv/src/Goodby/CSV/Export/Tests/Standard/Join/Collection/PdoCollectionTest.php',
+        'Goodby\\CSV\\Export\\Tests\\Standard\\Join\\ExporterTest' => __DIR__ . '/..' . '/goodby/csv/src/Goodby/CSV/Export/Tests/Standard/Join/ExporterTest.php',
+        'Goodby\\CSV\\Export\\Tests\\Standard\\Join\\UsageTest' => __DIR__ . '/..' . '/goodby/csv/src/Goodby/CSV/Export/Tests/Standard/Join/UsageTest.php',
+        'Goodby\\CSV\\Export\\Tests\\Standard\\Unit\\Collection\\CallbackCollectionTest' => __DIR__ . '/..' . '/goodby/csv/src/Goodby/CSV/Export/Tests/Standard/Unit/Collection/CallbackCollectionTest.php',
+        'Goodby\\CSV\\Export\\Tests\\Standard\\Unit\\Collection\\SampleAggIterator' => __DIR__ . '/..' . '/goodby/csv/src/Goodby/CSV/Export/Tests/Standard/Unit/Collection/SampleAggIterator.php',
+        'Goodby\\CSV\\Export\\Tests\\Standard\\Unit\\ExporterConfigTest' => __DIR__ . '/..' . '/goodby/csv/src/Goodby/CSV/Export/Tests/Standard/Unit/ExporterConfigTest.php',
+        'Goodby\\CSV\\Import\\Protocol\\Exception\\CsvFileNotFoundException' => __DIR__ . '/..' . '/goodby/csv/src/Goodby/CSV/Import/Protocol/Exception/CsvFileNotFoundException.php',
+        'Goodby\\CSV\\Import\\Protocol\\Exception\\InvalidLexicalException' => __DIR__ . '/..' . '/goodby/csv/src/Goodby/CSV/Import/Protocol/Exception/InvalidLexicalException.php',
+        'Goodby\\CSV\\Import\\Protocol\\InterpreterInterface' => __DIR__ . '/..' . '/goodby/csv/src/Goodby/CSV/Import/Protocol/InterpreterInterface.php',
+        'Goodby\\CSV\\Import\\Protocol\\LexerInterface' => __DIR__ . '/..' . '/goodby/csv/src/Goodby/CSV/Import/Protocol/LexerInterface.php',
+        'Goodby\\CSV\\Import\\Standard\\Exception\\StrictViolationException' => __DIR__ . '/..' . '/goodby/csv/src/Goodby/CSV/Import/Standard/Exception/StrictViolationException.php',
+        'Goodby\\CSV\\Import\\Standard\\Interpreter' => __DIR__ . '/..' . '/goodby/csv/src/Goodby/CSV/Import/Standard/Interpreter.php',
+        'Goodby\\CSV\\Import\\Standard\\Lexer' => __DIR__ . '/..' . '/goodby/csv/src/Goodby/CSV/Import/Standard/Lexer.php',
+        'Goodby\\CSV\\Import\\Standard\\LexerConfig' => __DIR__ . '/..' . '/goodby/csv/src/Goodby/CSV/Import/Standard/LexerConfig.php',
+        'Goodby\\CSV\\Import\\Standard\\Observer\\PdoObserver' => __DIR__ . '/..' . '/goodby/csv/src/Goodby/CSV/Import/Standard/Observer/PdoObserver.php',
+        'Goodby\\CSV\\Import\\Standard\\Observer\\SqlObserver' => __DIR__ . '/..' . '/goodby/csv/src/Goodby/CSV/Import/Standard/Observer/SqlObserver.php',
+        'Goodby\\CSV\\Import\\Standard\\StreamFilter\\ConvertMbstringEncoding' => __DIR__ . '/..' . '/goodby/csv/src/Goodby/CSV/Import/Standard/StreamFilter/ConvertMbstringEncoding.php',
+        'Goodby\\CSV\\Import\\Tests\\Protocol\\InterpreterTest' => __DIR__ . '/..' . '/goodby/csv/src/Goodby/CSV/Import/Tests/Protocol/InterpreterTest.php',
+        'Goodby\\CSV\\Import\\Tests\\Protocol\\LexerTest' => __DIR__ . '/..' . '/goodby/csv/src/Goodby/CSV/Import/Tests/Protocol/LexerTest.php',
+        'Goodby\\CSV\\Import\\Tests\\Standard\\Join\\CSVFiles' => __DIR__ . '/..' . '/goodby/csv/src/Goodby/CSV/Import/Tests/Standard/Join/CSVFiles.php',
+        'Goodby\\CSV\\Import\\Tests\\Standard\\Join\\LexerTest' => __DIR__ . '/..' . '/goodby/csv/src/Goodby/CSV/Import/Tests/Standard/Join/LexerTest.php',
+        'Goodby\\CSV\\Import\\Tests\\Standard\\Join\\Observer\\PdoObserverTest' => __DIR__ . '/..' . '/goodby/csv/src/Goodby/CSV/Import/Tests/Standard/Join/Observer/PdoObserverTest.php',
+        'Goodby\\CSV\\Import\\Tests\\Standard\\SandboxDirectoryManager' => __DIR__ . '/..' . '/goodby/csv/src/Goodby/CSV/Import/Tests/Standard/SandboxDirectoryManager.php',
+        'Goodby\\CSV\\Import\\Tests\\Standard\\Unit\\InterpreterTest' => __DIR__ . '/..' . '/goodby/csv/src/Goodby/CSV/Import/Tests/Standard/Unit/InterpreterTest.php',
+        'Goodby\\CSV\\Import\\Tests\\Standard\\Unit\\LexerConfigTest' => __DIR__ . '/..' . '/goodby/csv/src/Goodby/CSV/Import/Tests/Standard/Unit/LexerConfigTest.php',
+        'Goodby\\CSV\\Import\\Tests\\Standard\\Unit\\Observer\\SqlObserverTest' => __DIR__ . '/..' . '/goodby/csv/src/Goodby/CSV/Import/Tests/Standard/Unit/Observer/SqlObserverTest.php',
+        'Goodby\\CSV\\Import\\Tests\\Standard\\Unit\\StreamFilter\\ConvertMbstringEncodingTest' => __DIR__ . '/..' . '/goodby/csv/src/Goodby/CSV/Import/Tests/Standard/Unit/StreamFilter/ConvertMbstringEncodingTest.php',
+        'Goodby\\CSV\\TestHelper\\DbManager' => __DIR__ . '/..' . '/goodby/csv/src/Goodby/CSV/TestHelper/DbManager.php',
         'GrahamCampbell\\ResultType\\Error' => __DIR__ . '/..' . '/graham-campbell/result-type/src/Error.php',
         'GrahamCampbell\\ResultType\\Result' => __DIR__ . '/..' . '/graham-campbell/result-type/src/Result.php',
         'GrahamCampbell\\ResultType\\Success' => __DIR__ . '/..' . '/graham-campbell/result-type/src/Success.php',
@@ -5660,6 +5708,7 @@ class ComposerStaticInitc71bbe4db8ba969d1d5107da2abb17a2
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInitc71bbe4db8ba969d1d5107da2abb17a2::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInitc71bbe4db8ba969d1d5107da2abb17a2::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInitc71bbe4db8ba969d1d5107da2abb17a2::$prefixesPsr0;
             $loader->classMap = ComposerStaticInitc71bbe4db8ba969d1d5107da2abb17a2::$classMap;
 
         }, null, ClassLoader::class);
