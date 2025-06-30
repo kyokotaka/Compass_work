@@ -7,6 +7,9 @@
       <p>カナ：<span>{{ Auth::user()->over_name_kana }}</span><span class="ml-1">{{ Auth::user()->under_name_kana }}</span></p>
       <p>性別：@if(Auth::user()->sex == 1)<span>男</span>@else<span>女</span>@endif</p>
       <p>生年月日：<span>{{ Auth::user()->birth_day }}</span></p>
+      @if(Auth::user()->role!=4)
+        <button onclick="location.href='input/schedule'" class="btn btn-primary">シフトを登録</button>
+      @endif
     </div>
   </div>
 </div>

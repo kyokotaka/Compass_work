@@ -7,7 +7,7 @@ use App\Http\Controllers\Authenticated\Calendar\Admin\CalendarsController;
 use App\Http\Controllers\Authenticated\Calendar\General\CalendarController;
 use App\Http\Controllers\Authenticated\Top\TopsController;
 use App\Http\Controllers\Authenticated\Users\UsersController;
-
+use App\Http\Controllers\Authenticated\Shifts\ShiftsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -61,6 +61,11 @@ Route::group(['middleware' => 'auth'], function(){
             Route::get('show/users', [UsersController::class, 'showUsers'])->name('user.show');
             Route::get('user/profile/{id}', [UsersController::class, 'userProfile'])->name('user.profile');
             Route::post('user/profile/edit', [UsersController::class, 'userEdit'])->name('user.edit');
+        });
+        Route::namespace('Shifts')->group(function(){
+            Route::get('show/schedule',[ShiftsController::class,'scheduleShow'])->name('schedule.show');
+            Route::get('input/schedule', [ShiftsController::class, 'shiftInput'])->name('schedule.input');
+            Route::post('import/csv', [ShiftsController::class, 'importCSV'])->name('schedule.import');
         });
     });
 });

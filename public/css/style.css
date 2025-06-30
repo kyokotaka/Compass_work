@@ -277,3 +277,211 @@ li {
 .subject_inner {
   display: none;
 }
+
+/* カレンダー全体のスタイル */
+.calendar-container {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 20px;
+}
+
+/* ヘッダーのスタイル */
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.calendar-header button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.calendar-header button:hover {
+  background: #0056b3;
+}
+
+.calendar-header .date-selector {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.calendar-header .date-selector button {
+  padding: 8px;
+  background: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 50%;
+}
+
+.calendar-header .date-selector button:hover {
+  background: #e9ecef;
+}
+
+/* カレンダーの日付ヘッダー */
+.calendar-day-header {
+  text-align: center;
+  font-weight: 600;
+  color: #495057;
+  padding: 8px 0;
+  border-bottom: 1px solid #dee2e6;
+}
+
+/* 月間ビューの日付セル */
+.calendar-day-cell {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.calendar-day-cell:hover {
+  background: #f8f9fa;
+}
+
+.calendar-day-cell.today {
+  background: #e7f1ff;
+  border-color: #007bff;
+}
+
+/* イベントのスタイル */
+.calendar-event {
+  position: relative;
+  padding: 8px;
+  margin: 4px 0;
+  border-radius: 4px;
+  background: #007bff;
+  color: white;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.calendar-event:hover {
+  background: #0056b3;
+}
+
+/* 週間ビューのスタイル */
+.week-view {
+  overflow-x: auto;
+}
+
+.week-view .time-slot {
+  height: 60px;
+  border-bottom: 1px solid #dee2e6;
+  display: flex;
+  align-items: center;
+}
+
+.week-view .time-slot:last-child {
+  border-bottom: none;
+}
+
+.week-view .time-slot .time-label {
+  width: 100px;
+  padding: 0 12px;
+  font-weight: 500;
+  color: #495057;
+}
+
+.week-view .time-slot .day-cell {
+  flex: 1;
+  padding: 8px;
+  border-left: 1px solid #dee2e6;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.week-view .time-slot .day-cell:hover {
+  background: #f8f9fa;
+}
+
+/* モーダルのスタイル */
+.event-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.event-modal-content {
+  background: white;
+  padding: 24px;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.event-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.event-modal-header h3 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.event-modal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.event-modal-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.event-modal-form input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+}
+
+.event-modal-form button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.event-modal-form button.primary {
+  background: #007bff;
+  color: white;
+}
+
+.event-modal-form button.primary:hover {
+  background: #0056b3;
+}
+
+.event-modal-form button.secondary {
+  background: #f8f9fa;
+  color: #495057;
+  margin-right: 8px;
+}
+
+.event-modal-form button.secondary:hover {
+  background: #e9ecef;
+}
